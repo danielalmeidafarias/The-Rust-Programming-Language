@@ -21,7 +21,7 @@ fn main() {
         println!("{floating_number}");
 
         // Division
-        // let teste: f64 = 5 / 2.5; // Error - Cannot divide integer by float
+        // let division: f64 = 5 / 2.5; // Error - Cannot divide integer by float
 
         let quotient = 56.7 / 32.2; // Floating-point division
         println!("{quotient}"); // Results in 1.76086...

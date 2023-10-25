@@ -1,0 +1,1 @@
+/home/daniel/projetos/The-Rust-Programming-Language/twelve_days_of_christmas/target/debug/twelve_days_of_christmas: /home/daniel/projetos/The-Rust-Programming-Language/twelve_days_of_christmas/src/main.rs
