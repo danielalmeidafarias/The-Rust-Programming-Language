@@ -1,20 +1,11 @@
-use std::io;
-
 fn main() {
     println!("Welcome to the Rust Twelve Days of Christmas generator!");
-    println!("Please, type the day you want(1-12)");
 
-    let mut days: String = String::new();
-    io::stdin().read_line(&mut days).expect("Error on reading the value");
-
-    let mut days: Result<u32, _> = days.trim().parse();
-
-
-    twelve_days_of_christmas(3);
+    twelve_days_of_christmas();
 
 }
 
-fn twelve_days_of_christmas(days: u16) -> [String; 12] {
+fn twelve_days_of_christmas() {
 
     let verses: [String; 12] = [
     "A partridge in a pear tree".to_string(), 
@@ -30,6 +21,18 @@ fn twelve_days_of_christmas(days: u16) -> [String; 12] {
     "eleven pipers piping".to_string(),
     "twelve drummers drumming".to_string(),
     ];
+
+    for i in 0..12 {
+
+        println!("On the {}nth day of Christmas my true lover sent to me", i + 1);
+
+        for j in 0..=i {
+            let x = i - j;
+            println!("{}", verses[x]);
+        }
+
+        println!("");
+    }
 
 
 }
