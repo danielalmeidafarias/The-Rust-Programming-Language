@@ -11,7 +11,7 @@ fn main() {
 
         io::stdin().read_line(&mut nth).expect("Error on reading the value");
 
-        let nth: Result<u64, _> = nth.trim().parse();
+        let nth: Result<u128, _> = nth.trim().parse();
 
         match nth {
             Ok(n) => {
@@ -44,18 +44,18 @@ fn main() {
 
 }
 
-fn fibonacci(n: u64) -> u64 {
+fn fibonacci(n: u128) -> u128 {
 
     let mut while_handler = n;
-    let mut f: u64 = 0;
+    let mut f: u128 = 0;
 
   
-    if while_handler <= 1 {
+    if while_handler < 1 {
         f = 1;
     } else {
 
-        let mut handler1: u64 = 1;
-        let mut handler2: u64 = 1;
+        let mut handler1: u128 = 1;
+        let mut handler2: u128 = 1;
 
 
         while while_handler > 1 {
